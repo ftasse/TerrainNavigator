@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/sky">
+        <file alias="reflectionMap.jpg">sky/reflectionMap.jpg</file>
+        <file alias="skyback.jpg">sky/skyback.jpg</file>
+        <file alias="skybottom.jpg">sky/skybottom.jpg</file>
+        <file alias="skyfront.jpg">sky/skyfront.jpg</file>
+        <file alias="skyleft.jpg">sky/skyleft.jpg</file>
+        <file alias="skyright.jpg">sky/skyright.jpg</file>
+        <file alias="skytop.jpg">sky/skytop.jpg</file>
+    </qresource>
+</RCC>
