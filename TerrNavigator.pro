@@ -29,11 +29,13 @@ HEADERS += mainwindow.h \
 FORMS += mainwindow.ui \
     dialog.ui
 
-win32::INCLUDEPATH += $$quote(C:/Program Files (x86)/libQGLViewer/)
+win32::INCLUDEPATH += external/libQGLViewer/
 
 linux::LIBS += -lqglviewer-qt4  -lglut  -lGLEW
 macos::LIBS += -lqglviewer-qt4 -lglut -lGLEW
-win32::LIBS += -L$$quote(C:/Windows/System32) -lQGLViewer2 -lglut32 -lglew32 -lkernel32 -lgdi32
+#win32::LIBS += -L"$$PWD/external/libQGLViewer/QGLViewer/debug" -lQGLViewer2d
+win32::LIBS += -L"$$PWD/external/libQGLViewer/QGLViewer/release" -lQGLViewer2
+win32::LIBS += -lglut32 -lglew32
 
 OTHER_FILES +=
 
