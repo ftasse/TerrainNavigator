@@ -23,6 +23,9 @@
 // TP OpenGL: Joerg Liebelt, Serigne Sow
 #include "sky.h"
 
+#ifndef GL_CLAMP_TO_EDGE
+#define GL_CLAMP_TO_EDGE 0x812F
+#endif
 
 bool SKY::LoadTextures(const QString& folder){
     
